@@ -1,4 +1,4 @@
-name: tp4
+x-name: tp4
 
 services:
   # ---------------- Base de données ----------------
