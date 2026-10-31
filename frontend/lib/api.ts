@@ -1,4 +1,4 @@
-import type { Cours } from "@/lib/cours";
+import type { Cours } from "@devops2/cours-utils";
 
 // Mot de passe du client auprès de l'API (fourni par l'environnement)
 const API_PASSWORD = process.env.STRAPI_CLIENT_PASSWORD ?? "";

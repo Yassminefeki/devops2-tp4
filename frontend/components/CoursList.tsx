@@ -3,7 +3,7 @@
 import { useState } from "react";
 import CoursCard from "@/components/CoursCard";
 import CoursFilters from "@/components/CoursFilters";
-import { filterCours, LEVEL_LABELS, type Cours, type LevelFilter } from "@/lib/cours";
+import { filterCours, LEVEL_LABELS, type Cours, type LevelFilter } from "@devops2/cours-utils";
 
 function describeEmpty(query: string, level: LevelFilter): string {
   const niveau = level === "tous" ? "" : ` de niveau ${LEVEL_LABELS[level].toLowerCase()}`;

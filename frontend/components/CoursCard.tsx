@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatDuration, LEVEL_LABELS, type Cours } from "@/lib/cours";
+import { formatDuration, LEVEL_LABELS, type Cours } from "@devops2/cours-utils";
 
 export default function CoursCard({ cours }: { cours: Cours }) {
   return (

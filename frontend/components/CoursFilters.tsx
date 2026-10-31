@@ -1,6 +1,6 @@
 "use client";
 
-import { LEVEL_LABELS, type Level, type LevelFilter } from "@/lib/cours";
+import { LEVEL_LABELS, type Level, type LevelFilter } from "@devops2/cours-utils";
 
 type Props = {
   query: string;

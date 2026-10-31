@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import { getCoursById } from "@/lib/api";
-import { formatDuration, LEVEL_LABELS } from "@/lib/cours";
+import { formatDuration, LEVEL_LABELS } from "@devops2/cours-utils";
 
 async function CoursDetail({ params }: { params: Promise<{ documentId: string }> }) {
   await connection();
