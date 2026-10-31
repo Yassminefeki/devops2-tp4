@@ -1,4 +1,12 @@
 {
+  "name": "@devops2/cours-utils",
+  "version": "0.2.0",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "http://nexus:8081/repository/npm-hosted/"
+  },
   "description": "Logique des cours (durée, filtre, tri) partagée par les applications DevOps 2",
   "license": "MIT",
   "type": "module",

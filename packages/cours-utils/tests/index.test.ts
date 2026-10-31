@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { filterCours, formatDuration, sortBySession, type Cours } from "../src/index";
+import { filterCours, formatDuration, formatLevel, sortBySession, type Cours } from "../src/index";
 
 function unCours(overrides: Partial<Cours>): Cours {
   return {
@@ -72,5 +72,10 @@ describe("sortBySession", () => {
   it("ne modifie pas le tableau d'origine", () => {
     sortBySession(COURS);
     expect(COURS.map((c) => c.session)).toEqual([3, 1, 6, 2]);
+  });
+});
+describe("formatLevel", () => {
+  it("renvoie le libellé du niveau", () => {
+    expect(formatLevel("avance")).toBe("Avancé");
   });
 });
